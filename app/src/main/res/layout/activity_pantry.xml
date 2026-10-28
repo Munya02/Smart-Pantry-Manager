@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+
+    <!-- ===================================== -->
+    <!-- SCROLLABLE PANTRY CONTENT             -->
+    <!-- ===================================== -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!-- ================================= -->
+            <!-- TITLE                             -->
+            <!-- ================================= -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/my_pantry"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="8dp" />
+
+
+            <!-- ================================= -->
+            <!-- DESCRIPTION                       -->
+            <!-- ================================= -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pantry_description"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginBottom="25dp" />
+
+
+            <!-- ================================= -->
+            <!-- INGREDIENT NAME                   -->
+            <!-- ================================= -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ingredient_name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp" />
+
+            <EditText
+                android:id="@+id/editItemName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_ingredient_name"
+                android:inputType="textCapWords"
+                android:layout_marginBottom="15dp" />
+
+
+            <!-- ================================= -->
+            <!-- QUANTITY                          -->
+            <!-- ================================= -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quantity"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp" />
+
+            <EditText
+                android:id="@+id/editQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_quantity"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="15dp" />
+
+
+            <!-- ================================= -->
+            <!-- UNIT                              -->
+            <!-- ================================= -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/unit"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp" />
+
+            <Spinner
+                android:id="@+id/spinnerUnit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="25dp" />
+
+
+            <!-- ================================= -->
+            <!-- PANTRY ACTION BUTTONS             -->
+            <!-- ================================= -->
+
+            <Button
+                android:id="@+id/btnAddItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_item"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/btnUpdateItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/update_item"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/btnDeleteItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delete_item"
+                android:layout_marginBottom="30dp" />
+
+
+            <!-- ================================= -->
+            <!-- PANTRY ITEMS                      -->
+            <!-- ================================= -->
+
+            <TextView
+                android:id="@+id/txtItemsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pantry_items"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/txtEmptyPantry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_pantry_items"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:padding="15dp"
+                android:layout_marginBottom="10dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerPantry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:layout_marginBottom="20dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!-- ===================================== -->
+    <!-- BACK BUTTON                           -->
+    <!-- ===================================== -->
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:layout_marginTop="10dp" />
+
+
+</LinearLayout>

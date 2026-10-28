@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+
+    <!-- ===================================== -->
+    <!-- SCROLLABLE RECIPE DETAILS             -->
+    <!-- ===================================== -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!-- ================================= -->
+            <!-- RECIPE NAME                       -->
+            <!-- ================================= -->
+
+            <TextView
+                android:id="@+id/txtRecipeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="25dp" />
+
+
+            <!-- ================================= -->
+            <!-- INGREDIENTS HEADING               -->
+            <!-- ================================= -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ingredients"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp" />
+
+
+            <!-- ================================= -->
+            <!-- INGREDIENT LIST                   -->
+            <!-- ================================= -->
+
+            <TextView
+                android:id="@+id/txtIngredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:lineSpacingExtra="5dp"
+                android:layout_marginBottom="30dp" />
+
+
+            <!-- ================================= -->
+            <!-- INSTRUCTIONS HEADING              -->
+            <!-- ================================= -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/instructions"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp" />
+
+
+            <!-- ================================= -->
+            <!-- INSTRUCTIONS                      -->
+            <!-- ================================= -->
+
+            <TextView
+                android:id="@+id/txtInstructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:lineSpacingExtra="5dp"
+                android:layout_marginBottom="20dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!-- ===================================== -->
+    <!-- BACK BUTTON                           -->
+    <!-- ===================================== -->
+
+    <Button
+        android:id="@+id/btnDetailBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:layout_marginTop="10dp" />
+
+
+</LinearLayout>

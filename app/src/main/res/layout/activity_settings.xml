@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+
+    <!-- ===================================== -->
+    <!-- TITLE                                 -->
+    <!-- ===================================== -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_title"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+
+    <!-- ===================================== -->
+    <!-- DESCRIPTION                           -->
+    <!-- ===================================== -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_description"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginBottom="30dp" />
+
+
+    <!-- ===================================== -->
+    <!-- USER NAME                             -->
+    <!-- ===================================== -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name_label"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp" />
+
+
+    <EditText
+        android:id="@+id/editUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name_hint"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="25dp" />
+
+
+    <!-- ===================================== -->
+    <!-- VEGETARIAN PREFERENCE                 -->
+    <!-- ===================================== -->
+
+    <CheckBox
+        android:id="@+id/checkVegetarian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/vegetarian_preference"
+        android:textSize="16sp"
+        android:layout_marginBottom="30dp" />
+
+
+    <!-- ===================================== -->
+    <!-- SAVE                                  -->
+    <!-- ===================================== -->
+
+    <Button
+        android:id="@+id/btnSaveSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_settings"
+        android:layout_marginBottom="15dp" />
+
+
+    <!-- ===================================== -->
+    <!-- BACK                                  -->
+    <!-- ===================================== -->
+
+    <Button
+        android:id="@+id/btnSettingsBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back" />
+
+
+</LinearLayout>
